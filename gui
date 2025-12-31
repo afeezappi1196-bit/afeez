@@ -1,0 +1,32 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class AdmissionForm extends JFrame implements ActionListener {
+
+    // Declare components
+    JTextField txtName, txtFather;
+    JRadioButton rbMale, rbFemale;
+    JComboBox<String> cbCourse;
+    JTextArea txtAddress;
+    JButton btnSubmit, btnReset;
+
+    public AdmissionForm() {
+
+        // Frame settings
+        setTitle("Admission Form");
+        setSize(450, 450);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Set layout
+        setLayout(null);
+
+        // Labels
+        JLabel lblTitle = new JLabel("Admission Form");
+        lblTitle.setFont(new Font("Arial", Font.BOLD, 20));
+        lblTitle.setBounds(140, 20, 200, 30);
+        add(lblTitle);
+
+        JLabel lblName = new JLabel("Student Name:");
+        lblName.setBounds(50
